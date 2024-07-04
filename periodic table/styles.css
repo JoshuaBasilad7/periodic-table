@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .periodic-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Flexible columns */
+    gap: 1px; /* Gap between elements */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 100%; /* Ensure it doesn't overflow horizontally */
+  }
+  
+  .element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    transition: transform 0.3s ease;
+    min-height: 80px;
+  }
+  
+  .element:hover {
+    transform: scale(1.1);
+  }
+  
+  .atomic-number {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .symbol {
+    font-size: 2em;
+    color: #007bff;
+  }
+  
+  .name {
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  .atomic-mass {
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  /* Define colors for different element categories */
+  .category.alkali-metal {
+    color: #f06292;
+  }
+
+  .category-metal {
+    background-color: #e1bee7;
+  }
+  
+  .category-nonmetal {
+    background-color: #bbdefb;
+  }
+  
+  .category-metalloid {
+    background-color: #c8e6c9;
+  }
+  
+  .category-noble-gas {
+    background-color: #ffe082;
+  }
+  
+  .category-alkali-metal {
+    background-color: #ffcc80;
+  }
+  
+  .category-alkaline-earth-metal {
+    background-color: #ffd180;
+  }
+  
+  .category-transition-metal {
+    background-color: #b2dfdb;
+  }
+  
+  .category-post-transition-metal {
+    background-color: #ffab91;
+  }
+  
+  .category-halogen {
+    background-color: #ffccbc;
+  }
+  
+  /* Specific element colors */
+  .element.h:hover {
+    background-color: #f06292;
+  }
+  
+  .element.he:hover {
+    background-color: #81d4fa;
+  }
+  
+  .element.o:hover {
+    background-color: #f48fb1;
+  }
+  
+  .element.c:hover {
+    background-color: #a5d6a7;
+  }
+  
+  .element.pt:hover {
+    background-color: #ffcc80;
+  }
+  
